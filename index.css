@@ -1,0 +1,96 @@
+.frame-child {
+    position: absolute;
+    top: 104px;
+    left: 0;
+    background-color: var(--color-gray);
+    width: 1440px;
+    height: 735px;
+  }
+  .image-36-icon {
+    position: absolute;
+    top: 211px;
+    left: 708px;
+    width: 665.11px;
+    height: 507px;
+    object-fit: cover;
+  }
+  .image-35 {
+    position: absolute;
+    top: 104px;
+    left: 761px;
+    width: 679px;
+    height: 735px;
+  }
+  .frame-inner,
+  .frame-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1440px;
+    height: 104px;
+  }
+  .frame-inner {
+    top: 26px;
+    left: 1186px;
+    border-radius: 10px;
+    background-color: #000;
+    width: 187px;
+    height: 51px;
+  }
+  .acesse-a-comunidade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    width: 164px;
+    height: 27px;
+  }
+  .acesse-a-comunidade-wrapper {
+    position: absolute;
+    top: 38px;
+    left: 1198px;
+    width: 164px;
+    height: 27px;
+  }
+  .logotipo-horizontal-branco-3-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 458px;
+    height: 101px;
+    object-fit: cover;
+  }
+  .b,
+  .o-curso-para {
+    position: absolute;
+    line-height: 130%;
+  }
+  .o-curso-para {
+    top: 370px;
+    left: 115px;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    width: 528px;
+    height: 135px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+  }
+  .b {
+    top: 34px;
+    left: 666px;
+    font-size: 25px;
+  }
+  .rectangle-parent {
+    position: relative;
+    background-color: var(--color-gray);
+    width: 100%;
+    height: 839px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 15px;
+    color: var(--color-white);
+    font-family: var(--font-dm-sans);
+  }
+  
