@@ -34,8 +34,6 @@
         }
 
 
-
-
         .header-content {
             max-width: 1440px;
             display: flex;
@@ -97,7 +95,7 @@
         }
 
         .section-promessa {
-            height: calc(100vh - 290px);
+            height: 80vh;
             padding-top: 0;
         }
 
@@ -111,6 +109,34 @@
             height: 100%;
             color: white;
         }
+
+        .section-beneficios {
+            background-color: #3C5A87;
+            height: 33.75rem;
+        }
+
+
+
+        button.inscrevase {
+            border-radius: 0.625rem;
+            background: #000;
+            padding: 2.25rem 2.85rem;
+            color: white;
+            display: flex;
+            font-size: 1.5rem;
+            font-weight: 700;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        button.inscrevase:hover {
+            box-shadow: 0px 5px 10px rgb(34, 34, 34);
+            transform: translate(-5px, -5px);
+            /* Move o botão 5px para cima e para a esquerda */
+        }
+
+
 
         .promessa-content p {
             display: flex;
@@ -130,20 +156,76 @@
             /* 1.95rem */
         }
 
-        .promessa-content img{
+        .promessa-content img {
             width: 90%;
         }
 
+        .card-beneficio {
+            width: 100%;
+            max-width: 21.9125rem;
+            height: auto;
+            border-radius: 0.9375rem;
+            background: #2B2B2B;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .beneficios-content {
+            max-width: 1440px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            color: white;
+        }
+
+        .cards {
+            text-align: center;
+            padding-bottom: 30px;
+            padding-top: 30px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 32px;
+            color: #FFF;
+
+
+        }
+
+        .cards p {
+            text-align: center;
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: DM Sans;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+            width: 80%;
+
+        }
+        @media screen and (max-width: 1024px) {
+
+            
+            
+        }
         @media screen and (max-width: 768px) {
             header img {
                 width: 270px;
                 height: auto;
             }
 
+
             .button-comunidade {
                 padding: 10px 20px;
                 font-size: 10px;
             }
+
+
 
 
             .segmantacao-content {
@@ -177,16 +259,16 @@
                 flex-shrink: 0;
             }
 
-            .section-promessa{
-                height: calc(100vh - 400px);
+            .section-promessa {
+                height: 50vh;
                 padding-top: 0;
             }
 
-            .promessa-content{
+            .promessa-content {
                 padding-top: 0;
             }
 
-            .promessa-content img{
+            .promessa-content img {
                 width: 90%;
                 height: auto;
             }
@@ -207,6 +289,64 @@
                 margin-top: 50px;
                 margin-bottom: 50px;
             }
+
+            .section-beneficios {
+                height: 100vh;
+                overflow: auto;
+            }
+
+            .beneficios-content {
+                max-width: 1440px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: start;
+                flex-direction: column;
+                align-items: center;
+                height: 100%;
+                color: white;
+            }
+
+            
+            .cards {
+                text-align: center;
+                padding-bottom: 80px;
+                padding-top: 100px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+                margin-bottom: 32px;
+                color: #FFF;
+                flex-direction: column;
+            }
+
+            .cards p {
+                text-align: center;
+                font-feature-settings: 'clig' off, 'liga' off;
+                font-family: DM Sans;
+                font-size: 1.3rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%;
+                width: 80%;
+
+            }
+
+            button.inscrevase {
+                border-radius: 0.625rem;
+                background: #000;
+                padding: 1.25rem 1.85rem;
+                color: white;
+                display: flex;
+                font-size: 1rem;
+                font-weight: 700;
+                cursor: pointer;
+                border: none;
+                transition: all 0.3s ease-in-out;
+            }
+
+
 
 
         }
@@ -253,21 +393,20 @@
             }
 
             .section-segmentação {
-                height: calc(100vh - 180px);
+                height: 95vh;
                 padding-top: 0;
             }
 
-            .section-promessa{
-                height: calc(100vh - 500px);
+            .section-promessa {
                 padding-top: 0;
             }
 
-            .promessa-content{
+            .promessa-content {
                 padding-top: 0;
-                
+
             }
 
-            .promessa-content img{
+            .promessa-content img {
                 width: 90%;
                 height: auto;
             }
@@ -288,6 +427,60 @@
                 margin-top: 50px;
                 margin-bottom: 50px;
             }
+
+            .section-beneficios {
+                height: 100vh;
+            }
+
+            .beneficios-content {
+                max-width: 1440px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                height: 100%;
+                color: white;
+            }
+
+            .cards {
+                text-align: center;
+                padding-bottom: 30px;
+                padding-top: 20px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+                margin-bottom: 32px;
+                color: #FFF;
+                flex-direction: column;
+            }
+
+            .cards p {
+                text-align: center;
+                font-feature-settings: 'clig' off, 'liga' off;
+                font-family: DM Sans;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%;
+                width: 80%;
+
+            }
+
+            button.inscrevase {
+                border-radius: 0.625rem;
+                background: #000;
+                padding: 1.25rem 1.85rem;
+                color: white;
+                display: flex;
+                font-size: 1rem;
+                font-weight: 700;
+                cursor: pointer;
+                border: none;
+                transition: all 0.3s ease-in-out;
+            }
         }
     </style>
 
@@ -295,26 +488,49 @@
 
 <body>
     <header>
-        <div class="header-content">
+        <section class="header-content">
             <img src="LOGOTIPO_HORIZONTAL_BRANCO 2.png" alt="">
             <button class="button-comunidade" id="acesse-comunidade">Acesse a comunidade</button>
-        </div>
+        </section>
     </header>
 
-    <div class="section-segmentação">
-        <div class="segmantacao-content">
+    <section class="section-segmentação">
+        <main class="segmantacao-content">
             <p>O curso para ARQUITETOS e ENGENHEIROS projetarem em madeira!</p>
             <img src="image 35.png" alt="">
-        </div>
-    </div>
-    <div class="section-promessa">
-        <div class="promessa-content">
+        </main>
+    </section>
+    <section class="section-promessa">
+        <main class="promessa-content">
             <p>Com o curso você vai aprender a projetar em madeira, desde a concepção até a execução, com aulas práticas
                 e teóricas, com o objetivo de te capacitar para projetar em madeira.</p>
-
             <img src="image 36.png" alt="">
-        </div>
-    </div>
+        </main>
+    </section>
+    <section class="section-beneficios">
+        <main class="beneficios-content">
+            <div class="cards">
+                <div class="card-beneficio" id="beneficio1">
+                    <p>Que tal vender mais um serviço para o seu cliente, tanto com
+                        REFORMA como em OBRA NOVA?</p>
+                </div>
+                <div class="card-beneficio" id="beneficio2">
+                    <p>Quer aprender como conceber projetos que aproveitem a água
+                        em
+                        suas instalações prediais?</p>
+                </div>
+                <div class="card-beneficio" id="beneficio3">
+                    <p>Quer saber quais são os elementos e como planejar
+                        edificações e
+                        paisagens com cuidado com as águas?</p>
+                </div>
+            </div>
+            <button class="inscrevase">INSCREVA-SE AGORA</button>
+        </main>
+
+    </section>
+
+
 
 
 
