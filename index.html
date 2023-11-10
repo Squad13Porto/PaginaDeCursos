@@ -20,6 +20,11 @@
         header img {
             width: 383px;
             height: auto;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        header img.fade-out {
+            opacity: 0;
         }
 
         header {
@@ -30,9 +35,22 @@
             top: 0;
             left: 0;
             right: 0;
+            margin-top: 0
 
         }
 
+        header.scrolled {
+            background-color: white;
+        }
+
+        .button-comunidade.scrolled {
+            background-color: #CD001A;
+        }
+
+        header,
+        .button-comunidade {
+            transition: background-color 0.5s ease-in-out;
+        }
 
         .header-content {
             max-width: 1440px;
@@ -208,11 +226,9 @@
             width: 80%;
 
         }
-        @media screen and (max-width: 1024px) {
 
-            
-            
-        }
+        @media screen and (max-width: 1024px) {}
+
         @media screen and (max-width: 768px) {
             header img {
                 width: 270px;
@@ -306,7 +322,7 @@
                 color: white;
             }
 
-            
+
             .cards {
                 text-align: center;
                 padding-bottom: 80px;
@@ -358,7 +374,8 @@
             }
 
             .button-comunidade {
-                display: none;
+                padding: 10px 20px;
+                font-size: 10px;
             }
 
             .segmantacao-content {
@@ -533,7 +550,22 @@
 
 
 
-
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            const button = document.querySelector('.button-comunidade');
+            const logo = document.querySelector('header img');
+            if (window.pageYOffset > 0) {
+                header.classList.add('scrolled');
+                button.classList.add('scrolled');
+                logo.src = "LOGOTIPO_HORIZONTAL 1.png";
+            } else {
+                header.classList.remove('scrolled');
+                button.classList.remove('scrolled');
+                logo.src = "LOGOTIPO_HORIZONTAL_BRANCO 2.png";
+            }
+        });
+    </script>
 
 
 </body>
