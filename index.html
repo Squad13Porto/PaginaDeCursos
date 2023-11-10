@@ -686,7 +686,7 @@
                 flex-direction: column;
             }
 
-            .pertencimento-content p{
+            .pertencimento-content p {
                 width: 60%;
                 font-size: 2vh !important;
             }
@@ -730,6 +730,110 @@
                 aspect-ratio: 16 / 9;
             }
 
+        }
+
+
+        .section-aprenderaqui {
+            background-color: #BEE2ED;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5vh 0;
+            /* Use viewport height (vh) for responsive padding */
+        }
+
+        .aprenderaqui-content {
+            max-width: 1440px;
+            width: 90%;
+            /* Use percentage for responsive width */
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            padding: 4%;
+        }
+
+        .aprender-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            /* Make grid responsive */
+            gap: 40px;
+            width: 100%;
+        }
+
+        .column-items {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            /* Reset padding */
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-size: 2vh;
+        }
+
+        .item img {
+            width: 4vw;
+            /* Use viewport width for responsive image size */
+            max-width: 40px;
+            height: auto;
+            /* Maintain aspect ratio */
+        }
+
+        .aprenderaqui-content h1 {
+            align-self: flex-end;
+            font-size: 5vh;
+            /* Use viewport width for responsive font size */
+            color: white;
+            margin-bottom: 2vh;
+            /* Use viewport height for responsive margin */
+        }
+
+        .button-aprender-aqui {
+            border-radius: 0.625rem;
+            background: #000;
+            padding: 1.25rem 1.85rem;
+            color: white;
+            display: flex;
+            font-size: 1.25vw;
+            /* Use viewport width for responsive font size */
+            font-weight: 700;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+
+        @media (max-width: 768px) {
+            .aprender-items {
+                grid-template-columns: 1fr;
+                /* Stack columns on small screens */
+            }
+
+            .item img {
+                width: 6vw;
+                /* Increase size slightly on smaller screens */
+            }
+
+            .aprenderaqui-content h1 {
+                font-size: 5vh;
+                /* Increase size slightly on smaller screens */
+            }
+
+            .button-aprender-aqui {
+                font-size: 2.5vh;
+                /* Increase button text size on smaller screens */
+            }
         }
     </style>
 
@@ -868,6 +972,39 @@
             </div>
         </main>
     </section>
+
+
+    <section class="section-aprenderaqui">
+        <main class="aprenderaqui-content">
+            <h1>O que você irá aprender aqui ?</h1>
+
+            <div class="aprender-items">
+                <ul class="column-items">
+                    <li class="item"><img src="Vector.png" alt="">Quais elementos são importantes para planejar
+                        edificações e paisagens com cuidado com as águas?</li>
+                    <li class="item"><img src="Vector.png" alt="">Como conceber projetos que aproveitem a água em suas
+                        instalações prediais?</li>
+                    <li class="item"><img src="Vector.png" alt=""> Como dimensionar esses sistemas de armazenamento,
+                        reuso e tratamento e relacioná-los com os demais?</li>
+                    <li class="item"><img src="Vector.png" alt=""> Como dimensionar esses sistemas de armazenamento,
+                        reuso e tratamento e relacioná-los com os demais?</li>
+                </ul>
+                <ul class="column-items">
+                    <li class="item"><img src="Vector.png" alt="">Como armazenar e reutilizar a água?</li>
+                    <li class="item"><img src="Vector.png" alt="">Quais são os tratamentos possíveis para águas?</li>
+                    <li class="item"><img src="Vector.png" alt="">Você quer aprender como integrar paisagismo com
+                        infraestrutura hídrica, na escala urbana ou na escala da edificação?</li>
+                    <li class="item"><img src="Vector.png" alt="">Você quer aprender como integrar paisagismo com
+                        infraestrutura hídrica, na escala urbana ou na escala da edificação?</li>
+                </ul>
+            </div>
+            <button class="button-aprender-aqui">COMECE AGORA MESMO</button>
+
+        </main>
+    </section>
+
+
+
 
     <script>
         window.addEventListener('scroll', function () {
