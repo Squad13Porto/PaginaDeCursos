@@ -1113,7 +1113,6 @@
 
         .section-compra {
             background-color: #BCE1F6;
-            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -1537,9 +1536,6 @@
         </main>
     </section>
 
-    <style>
-
-    </style>
 
     <section class="section-professores">
         <main class="professores-content">
@@ -1599,26 +1595,194 @@
         </main>
     </section>
 
+    <section class="section-compra">
+        <main class="compra-content">
+            <div class="card-preco">
+                <h1>Acesso profissional</h1>
+                <p class="preco">R$ 197,00</p>
+                <p>Ou em até</p>
+                <p class="preco">12x de R$ 19,66*</p>
+                <p class="preco-detail">*O valor parcelado possui acréscimo.</p>
+                <button type="button">INSCREVA-SE AGORA</button>
+            </div>
+        </main>
+    </section>
+
 
     <style>
+        .section-gatilho {
+            background-color: #FFC5EB;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3%;
+        }
 
+        .gatilho-content {
+            max-width: 1440px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            grid-gap: 20px;
+            /* Adjust the space between the columns */
+        }
+
+        .text-gatilho {}
+
+        .text-gatilho h1 {
+            color: #2B2B2B;
+            font-size: 3rem;
+        }
+
+        .text-gatilho p {
+            color: #2B2B2B;
+            font-size: 1.5rem;
+            line-height: 1.5;
+            font-weight: 500;
+        }
+
+        .text-gatilho ul {
+            list-style: none;
+            padding: 0;
+            background: #FFFFFF;
+
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .text-gatilho ul li {
+            margin-bottom: 10px;
+            color: #333;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+            padding: 1%;
+            display: flex;
+            align-items: center;
+            align-items: center;
+
+        }
+
+        .text-gatilho li img {
+            max-width: 100%;
+            padding-right: 3%;
+            width: 8%;
+        }
+
+
+        .text-gatilho button {
+            background-color: #000000;
+            color: white;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            border-radius: 15px;
+            margin-top: 20px;
+            text-wrap: wrap;
+            padding: 12.5px 25px;
+            width: 50%;
+        }
+
+        .text-gatilho button:hover {
+            background-color: #333333;
+        }
+
+        .card-imagem {
+            display: flex;
+            justify-content: center;
+        }
+
+        .card-imagem img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media screen and (max-width: 768px) {
+            .gatilho-content {
+                grid-template-columns: 1fr;
+            }
+
+            .text-gatilho {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .text-gatilho ul {
+                width: 100%;
+            }
+
+            .text-gatilho h1 {
+                text-align: center;
+                font-size: 2.5rem;
+            }
+
+            .text-gatilho p {
+                text-align: center;
+
+                font-size: 1.2rem;
+            }
+
+            .text-gatilho button {
+                width: 60%;
+                font-size: 1.2rem;
+            }
+
+            .card-imagem {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .card-imagem img {
+                width: 50%;
+            }
+
+        }
+
+        @keyframes rocket-movement {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-100px);
+            }
+
+            /* Adjust the value to control the height of the movement */
+        }
+
+        .rocket-animate {
+            animation: rocket-movement 1s infinite alternate ease-in-out;
+        }
     </style>
-    </head>
 
-    <body>
-        <section class="section-compra">
-            <main class="compra-content">
-                <div class="card-preco">
-                    <h1>Acesso profissional</h1>
-                    <p class="preco">R$ 197,00</p>
-                    <p>Ou em até</p>
-                    <p class="preco">12x de R$ 19,66*</p>
-                    <p class="preco-detail">*O valor parcelado possui acréscimo.</p>
-                    <button type="button">INSCREVA-SE AGORA</button>
-                </div>
-            </main>
-        </section>
-    </body>
+    <section class="section-gatilho">
+        <main class="gatilho-content">
+            <!-- Text Content -->
+            <div class="text-gatilho">
+                <h1>Quer virar o jogo?</h1>
+                <p>CORRE e faz já sua inscrição.<br>Os 50 primeiros inscritos terão acesso à:</p>
+                <ul>
+                    <li><img src="Vector.png" alt="">Aula extra com os três professores juntos;</li>
+                    <li><img src="Vector.png" alt="">Materiais de apoio ao projeto (manuais e cartilhas);</li>
+                    <li><img src="Vector.png" alt="">Newsletter semanal exclusiva, com as principais novidades do
+                        mercado.</li>
+                </ul>
+                <button>Já está na hora de sua carreira decolar!</button>
+            </div>
+            <!-- Image Content -->
+            <div class="card-imagem">
+                <img src="launch_svgrepo.com.svg" alt="Rocket Image" class="rocket-animate">
+
+            </div>
+        </main>
+    </section>
+</body>
+
 
 </html>
 
