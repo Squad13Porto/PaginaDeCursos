@@ -1010,11 +1010,166 @@
             }
         }
 
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
         hr {
             width: 100%;
             height: 1px;
             background-color: #cccccc;
             margin: 0;
+        }
+
+
+        .grade-content {
+            padding: 5%;
+        }
+
+        .section-professores {
+            background-color: #FAD8E8;
+            min-height: 100vh;
+            /* Changed from height to min-height */
+        }
+
+        .professores-content {
+            display: grid;
+            max-width: 1440px;
+            margin: 0 auto;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding-bottom: 5%;
+        }
+
+        .professores-content h1 {
+            font-size: 3rem;
+            /* Changed from 6vh to 3rem for better scalability */
+            padding: 3%;
+            line-height: 1.2;
+            font-weight: bold;
+            color: white;
+        }
+
+        .cards-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 70px;
+            flex-wrap: wrap;
+        }
+
+        .card-professor {
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            /* Changed from row to column for smaller screens */
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 20px;
+            width: 53vh;
+            font-size: 1.5vh;
+            /* Changed from 0.8vw to 1em */
+            border-radius: 15px;
+            padding: 20px;
+            /* Changed from 1% to 20px */
+        }
+
+        .card-professor p {
+            width: 90%;
+        }
+
+        .card-professor img {
+            width: auto;
+            /* Keep width proportional */
+            max-height: 100%;
+            /* Prevent overflow and keep aspect ratio */
+            /* Other styles */
+        }
+
+
+        @media (max-width: 768px) {
+            .card-professor {
+                width: 70%;
+
+                flex-direction: column;
+
+            }
+
+            .texto-professores {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.8vh;
+
+            }
+
+
+
+        }
+
+        .section-compra {
+            background-color: #BCE1F6;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 3%;
+        }
+
+        .compra-content {
+            max-width: 1440px;
+            /* Adjust the width as needed */
+            text-align: center;
+            padding: 20px;
+            background: #ECECEC;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-preco {
+            border-radius: 8px;
+            padding: 2rem;
+        }
+
+        .card-preco h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .card-preco p {
+            font-size: 1.25rem;
+            color: #666;
+        }
+
+        .card-preco .preco {
+            font-size: 3rem;
+            color: #333;
+            margin: 1rem 0;
+        }
+
+        .card-preco .preco-detail {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .card-preco button {
+            padding: 1rem 2rem;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+
+        .card-preco button:hover {
+            background-color: #45a049;
         }
     </style>
 
@@ -1378,103 +1533,12 @@
                 </div>
             </div>
 
-            <hr>
-
 
         </main>
     </section>
 
     <style>
 
-        .grade-content{
-            padding: 5%;
-        }
-        .section-professores {
-            background-color: #FAD8E8;
-            min-height: 100vh;
-            /* Changed from height to min-height */
-        }
-
-        .professores-content {
-            display: grid;
-            max-width: 1440px;
-            margin: 0 auto;
-            grid-template-columns: 1fr;
-            gap: 20px;
-            padding-bottom: 5%;
-        }
-
-        .professores-content h1 {
-            font-size: 3rem;
-            /* Changed from 6vh to 3rem for better scalability */
-            padding: 3%;
-            line-height: 1.2;
-            font-weight: bold;
-            color: white;
-        }
-
-        .cards-section {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row;
-            gap: 70px;
-            flex-wrap: wrap;
-        }
-
-        .card-professor {
-            background-color: white;
-            display: flex;
-            flex-direction: row;
-            /* Changed from row to column for smaller screens */
-            justify-content: space-evenly;
-            align-items: center;
-            gap: 20px;
-            width: 53vh;
-            font-size: 1.5vh;
-            /* Changed from 0.8vw to 1em */
-            border-radius: 15px;
-            padding: 20px;
-            /* Changed from 1% to 20px */
-        }
-
-        .card-professor p {
-            width: 90%;
-        }
-
-        .card-professor img {
-            width: auto;
-            /* Keep width proportional */
-            max-height: 100%;
-            /* Prevent overflow and keep aspect ratio */
-            /* Other styles */
-        }
-
-
-        @media (max-width: 768px) {
-            .card-professor {
-                width: 70%;
-
-                flex-direction: column;
-
-            }
-
-            .texto-professores {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                font-size: 1.8vh;
-
-            }
-
-            *,
-            *::before,
-            *::after {
-                box-sizing: border-box;
-            }
-
-        }
     </style>
 
     <section class="section-professores">
@@ -1536,25 +1600,47 @@
     </section>
 
 
+    <style>
+
+    </style>
+    </head>
+
+    <body>
+        <section class="section-compra">
+            <main class="compra-content">
+                <div class="card-preco">
+                    <h1>Acesso profissional</h1>
+                    <p class="preco">R$ 197,00</p>
+                    <p>Ou em até</p>
+                    <p class="preco">12x de R$ 19,66*</p>
+                    <p class="preco-detail">*O valor parcelado possui acréscimo.</p>
+                    <button type="button">INSCREVA-SE AGORA</button>
+                </div>
+            </main>
+        </section>
+    </body>
+
+</html>
 
 
 
-    <script>
-        window.addEventListener('scroll', function () {
-            const header = document.querySelector('header');
-            const button = document.querySelector('.button-comunidade');
-            const logo = document.querySelector('header img');
-            if (window.pageYOffset > 0) {
-                header.classList.add('scrolled');
-                button.classList.add('scrolled');
-                logo.src = "LOGOTIPO_HORIZONTAL 1.png";
-            } else {
-                header.classList.remove('scrolled');
-                button.classList.remove('scrolled');
-                logo.src = "LOGOTIPO_HORIZONTAL_BRANCO 2.png";
-            }
-        });
-    </script>
+
+<script>
+    window.addEventListener('scroll', function () {
+        const header = document.querySelector('header');
+        const button = document.querySelector('.button-comunidade');
+        const logo = document.querySelector('header img');
+        if (window.pageYOffset > 0) {
+            header.classList.add('scrolled');
+            button.classList.add('scrolled');
+            logo.src = "LOGOTIPO_HORIZONTAL 1.png";
+        } else {
+            header.classList.remove('scrolled');
+            button.classList.remove('scrolled');
+            logo.src = "LOGOTIPO_HORIZONTAL_BRANCO 2.png";
+        }
+    });
+</script>
 
 
 </body>
